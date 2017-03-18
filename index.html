@@ -17,14 +17,6 @@
 	<script type="text/javascript" src="js/jquery.flexisel.js"></script>
 	<script type="text/javascript" src="jquery.js"></script>
 	<script src="js/vendor/jquery1.js"></script>
-	<!-- Basic stylesheet -->
-<link rel="stylesheet" href="js/owl.carousel.css">
- 
-<!-- Default Theme -->
-<link rel="stylesheet" href="js/owl.theme.css">
- 
-<!-- Include js plugin -->
-<script src="js/owl.carousel.js"></script>
   	<script type="text/javascript">
 		$(document).ready(function(){
 		  $('.slider4').bxSlider({
@@ -38,42 +30,8 @@
 		  });
 		});				
 	</script>
-	<script type="text/javascript">
-	$(document).ready(function(){
-		$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }
-});
-});
-	</script>
 </head>
 <body>
-	<div class="owl-carousel owl-theme">
-    <div class="item"><h4>1</h4></div>
-    <div class="item"><h4>2</h4></div>
-    <div class="item"><h4>3</h4></div>
-    <div class="item"><h4>4</h4></div>
-    <div class="item"><h4>5</h4></div>
-    <div class="item"><h4>6</h4></div>
-    <div class="item"><h4>7</h4></div>
-    <div class="item"><h4>8</h4></div>
-    <div class="item"><h4>9</h4></div>
-    <div class="item"><h4>10</h4></div>
-    <div class="item"><h4>11</h4></div>
-    <div class="item"><h4>12</h4></div>
-</div>
 	<div class="wrapper">
 		<div class="header">
 			<div class="header_top">
@@ -89,11 +47,14 @@
 			<div class="header_body">
 				<a href=""><img class="img-responsive" src="images/icon/logo.png"></a>
 				<div class="header_body_search">
-				<img class="img-responsive" src="images/icon/search.png">
-					<!-- <form action="" method="">
-						<input type="text" name="search" value="search">
-						<input type="submit" name="">
-					</form> -->
+					<form class="input-group " action="" method="">
+						<input type="text" class="form-control input-lg" placeholder="Tìm kiếm" />
+                    	<span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    	</span>
+					</form>
 				</div>
 				<div class="header_body_right">
 					<div class="header_body_right_phone">
@@ -108,82 +69,48 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="clearfix"></div>
-			<div class="header_menu navbar navbar-default" role = "navigation"">
-				<!-- <div class="navbar-header">
-			      <a class="navbar-brand " href="#">danh mục sản phẩm</a>
-			    </div> -->
+			<div class="header_menu navbar navbar-inverse" role = "navigation"">
 			    <div class = "navbar-header">
-			      <button type = "button" class = "navbar-toggle" 
+				    <button type = "button" class = "navbar-toggle" 
 			         data-toggle = "collapse" data-target = "#example-navbar-collapse">
 			         <span class = "sr-only">Toggle navigation</span>
 			         <span class = "icon-bar"></span>
 			         <span class = "icon-bar"></span>
 			         <span class = "icon-bar"></span>
-			      </button>
-					
-			   </div>
-			    <div class = "collapse navbar-collapse" id = "example-navbar-collapse">
-				
+				    </button>
+			    </div>
+			    <div class = "collapse navbar-collapse header_menu_list" id = "example-navbar-collapse">
 			      <ul class = "nav navbar-nav menu_list">
-			      	<li class="dropdown">
+			      	<li class="dropdown  menu_list1">
                             <a data-toggle="dropdown" href=""><img src="images/icon/dmsp.png">Danh mục sản phẩm<span class=""></span></a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu menu_list1_1">
                                 <li><a href="">Cây lau nhà</a></li>
                                 <li><a href="">Bếp hồng ngoại</a></li>
                                 <li><a href="">Cây lau nhà</a></li>
                                 <li><a href="">Bếp hồng ngoại</a></li>
                             </ul>
-                        </li>	
-			        <li><a href="">trang chủ</a></li>
+                    </li>	
+			        <li class="active"><a href="">trang chủ</a></li>
 					<li><a href="">giới thiệu</a></li>
-			         <li class="dropdown">
-                            <a data-toggle="dropdown" href="">Sản phẩm<span class=""></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="">Cây lau nhà</a></li>
-                                <li><a href="">Bếp hồng ngoại</a></li>
-                                <li><a href="">Cây lau nhà</a></li>
-                                <li><a href="">Bếp hồng ngoại</a></li>
-                            </ul>
-                        </li>	
-						<li><a href="">bộ sưu tập</a></li>
-						<li><a href="">tin tức</a></li>
-						<li><a href="">liên hệ</a></li>
-			      </ul>
-			   </div>
-			</div>
-			<!-- <div class="header_menu">
-			    <ul class="nav navbar-nav menu_list1">
-			    	<li class="dropdown menu_list1_1">
-                        <a data-toggle="dropdown" href=""><img src="images/icon/dmsp.png">Danh mục sản phẩm<span class=""></span></a>
-                        <ul class="dropdown-menu menu_list1_2">
+			        <li class="dropdown menu_list2">
+                        <a data-toggle="dropdown" href="">Sản phẩm<span class=""></span></a>
+                        <ul class="dropdown-menu menu_list2_1">
                             <li><a href="">Cây lau nhà</a></li>
                             <li><a href="">Bếp hồng ngoại</a></li>
                             <li><a href="">Cây lau nhà</a></li>
                             <li><a href="">Bếp hồng ngoại</a></li>
                         </ul>
-                    </li>	
-			    </ul>
-				<ul class="nav navbar-nav menu_list">
-						
-						<li><a href="">trang chủ</a></li>
-						<li><a href="">giới thiệu</a></li>
-						<li class="dropdown">
-                            <a data-toggle="dropdown" href="">Sản phẩm<span class=""></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="">Cây lau nhà</a></li>
-                                <li><a href="">Bếp hồng ngoại</a></li>
-                                <li><a href="">Cây lau nhà</a></li>
-                                <li><a href="">Bếp hồng ngoại</a></li>
-                            </ul>
                         </li>	
-						<li><a href="">bộ sưu tập</a></li>
-						<li><a href="">tin tức</a></li>
-						<li><a href="">liên hệ</a></li>
-					</ul>	
-			</div> -->
+					<li><a href="">bộ sưu tập</a></li>
+					<li><a href="">tin tức</a></li>
+					<li><a href="">liên hệ</a></li>
+		      </ul>
+			   </div>
+			</div>
 			<div class="img-slide">
-				<a href=""><img src="images/slide/slide1.png" style="margin-top: 10px;margin-left: 1%;"></a>
+				<a href=""><img src="images/slide/slide1.png"></a>
 			</div>
 				
 		</div>
